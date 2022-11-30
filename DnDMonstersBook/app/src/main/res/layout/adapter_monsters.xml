@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/items_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="#1D1F23">
+
+        <TextView
+            android:id="@+id/monster_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="22sp"
+            android:text="Nome do Monstro"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/monster_type"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="@id/monster_name"
+            app:layout_constraintStart_toEndOf="@id/monster_name"
+            app:layout_constraintBottom_toBottomOf="@id/monster_name"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="18sp"
+            android:text="(Tipo)"
+            android:textStyle="italic"
+            android:textColor="@color/gray"/>
+
+        <TextView
+            android:id="@+id/monster_lang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/monster_name"
+            app:layout_constraintStart_toStartOf="@id/monster_name"
+            android:layout_marginTop="10dp"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:textSize="18sp"
+            android:text="Languages: Common"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/monster_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/monster_lang"
+            app:layout_constraintStart_toStartOf="@id/monster_lang"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:text="Size: Enormous"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/monster_align"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/monster_lang"
+            app:layout_constraintStart_toEndOf="@id/monster_size"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="18sp"
+            android:text="Alignment: Chaotic Evil"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/monster_dc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/monster_size"
+            app:layout_constraintStart_toStartOf="@id/monster_size"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:text="Challenge Rating 99"
+            android:textStyle="bold"
+            android:textColor="@color/orange"/>
+
+        <TextView
+            android:id="@+id/monster_ac"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="@id/monster_dc"
+            app:layout_constraintStart_toEndOf="@id/monster_dc"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="18sp"
+            android:text="AC 99"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/monster_hp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="@id/monster_ac"
+            app:layout_constraintStart_toEndOf="@id/monster_ac"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="18sp"
+            android:text="HP 99"
+            android:textStyle="bold"
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:id="@+id/monster_str"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/monster_dc"
+            app:layout_constraintStart_toStartOf="@id/monster_dc"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:text="STR 99"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"/>
+
+        <TextView
+            android:id="@+id/monster_dex"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="@id/monster_str"
+            app:layout_constraintStart_toEndOf="@id/monster_str"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="18sp"
+            android:text="DEX 99"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"/>
+
+        <TextView
+            android:id="@+id/monster_con"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="@id/monster_dex"
+            app:layout_constraintStart_toEndOf="@id/monster_dex"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="18sp"
+            android:text="CON 99"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"/>
+
+        <TextView
+            android:id="@+id/monster_intel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="@id/monster_con"
+            app:layout_constraintStart_toEndOf="@id/monster_con"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="18sp"
+            android:text="INT 99"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"/>
+
+        <TextView
+            android:id="@+id/monster_wis"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="@id/monster_intel"
+            app:layout_constraintStart_toEndOf="@id/monster_intel"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="18sp"
+            android:text="WIS 99"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"/>
+
+        <TextView
+            android:id="@+id/monster_cha"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/monster_str"
+            app:layout_constraintStart_toStartOf="@id/monster_str"
+            android:textSize="18sp"
+            android:text="CHA 99"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
